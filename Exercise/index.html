@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .mycode {
+      height: 100vh;
+      background-image: linear-gradient(to left bottom, rgba(255, 127, 80, 0.692), rgba(192, 192, 192, 0.696) 90%);
+      align-items: center;
+    }
+
+    .card {
+      background-color: blueviolet;
+      width: 85.6mm;
+      height: 53.98mm;
+      border-radius: 3.18mm;
+      color: #fff;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6mm;
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    select,
+    input {
+      outline: none;
+      background-color: transparent;
+      border: 1px solid;
+      color: inherit;
+      width: 100%;
+      padding-left: 4px;
+      box-sizing: border-box;
+    }
+
+    .card>[type="number"] {
+      grid-row-start: 2;
+    }
+
+    select {
+      grid-column-end: span 2;
+    }
+
+    [type="text"] {
+      grid-row-start: 3;
+      grid-column-end: span 2;
+    }
+
+    .card__date {
+      display: flex;
+      height: 100%;
+      align-items: stretch;
+      justify-content: flex-end;
+      grid-column-end: span 2;
+      gap: 6px;
+    }
+
+    ::placeholder {
+      color: coral;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mycode">
+    <div class="card">
+      <select name="system">
+        <option>Visa</option>
+        <option selected>МИР</option>
+        <option>MasterCard</option>
+      </select>
+      <input type="number" placeholder="0000" maxlength="4" name="num1">
+      <input type="number" placeholder="0000" maxlength="4" name="num2">
+      <input type="number" placeholder="0000" maxlength="4" name="num3">
+      <input type="number" placeholder="0000" maxlength="4" name="num4">
+      <input type="text" placeholder="Ivanov Fedor" name="user">
+      <div class="card__date">
+        <input type="number" min="1" max="12" maxlength="2" value="7">
+        <input type="number" min="01" max="99" minlength="2" maxlength="2" value="22">
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <hr>
+  
+
+
+</body>
+
+</html>

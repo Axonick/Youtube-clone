@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display property</title>
+  <style>
+    .input-name {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .input-email {
+      display: block;
+    }
+
+    .text-thanks {
+      width: 200px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .btn {
+      vertical-align: middle;
+      background-color: rgb(0, 179, 255);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .search-bar {
+      width: 500px;
+      padding: 12px 16px 12px 16px;
+      border: none;
+      font-size: 16px;
+      border-radius: 30px;
+      box-shadow: 0 1px 6px rgba (0, 0, 0, 0.25);
+      display: inline-block;
+    }
+
+    .google-logo {
+      display: block;
+      width: 200px;
+      margin-left: 150px;
+      margin-bottom: 10px;
+    }
+
+    input {
+      font-size: 16px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      border: 1px solid rgb(200, 200, 200);
+      margin-bottom: 12px;
+    }
+
+    .first-name {
+      width: 148px;
+    }
+
+    .last-name {
+      width: 148px;
+    }
+
+    .email {
+      display: block;
+      width: 334px;
+    }
+
+    .sign-btn {
+      background-color: rgb(47, 127, 231);
+      color: #fff;
+      border: none;
+      width: 368px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /*.title {
+      font-size: 40px;
+      margin-bottom: 25px;
+    }
+
+    .title__location {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .title__destination {
+      display: block;
+    }
+
+    .request-btn {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .schedule-btn {
+      background-color: gray;
+      color: black;
+      border: none;
+      padding: 10px;
+      cursor: pointer;*/
+    .title {
+      font-size: 40px;
+      margin-bottom: 25px;
+    }
+
+
+    input {
+      display: block;
+      background-color: rgb(240, 240, 240);
+      border: none;
+      margin-bottom: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 16px;
+      width: 400px;
+    }
+
+    .title__destination {
+      margin-bottom: 35px;
+    }
+
+    .request-btn {
+      background-color: black;
+      color: white;
+      border: none;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 16px;
+      margin-right: 20px;
+    }
+
+    .schedule-btn {
+      background-color: rgb(240, 240, 240);
+      border: none;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <input class="input-name" type="text" placeholder="Name">
+  <input class="input-email" type="text" placeholder="Email">
+  <br>
+  <br>
+  <hr>
+  <p class="text-thanks">
+    Thanks for chatting with our customer support. Would you like to take our quick survey?
+  </p>
+  <button class="btn">
+    Yes
+  </button>
+  <button class="btn">
+    No
+  </button>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <img class="google-logo" src="/Exercise/img/google-logo.png" alt="google">
+  <input class="search-bar" type="text" placeholder="Search Google or type a URL">
+  <br>
+  <br>
+  <br>
+  <hr>
+  <input class="first-name" type="text" placeholder="First name">
+  <input class="last-name" type="text" placeholder="First name">
+  <input class="email" type="text" placeholder="Email">
+  <button class="sign-btn">
+    Sign Up
+  </button>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <p class="title">
+    Request a ride now
+    <input class="title__location" type="text" placeholder="Enter pickup location">
+    <input class="title__destination" type="text" placeholder="Enter destination">
+    <button class="request-btn">
+      Request now
+    </button>
+    <button class="schedule-btn">
+      Schedule for later
+    </button>
+  </p>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-areas: 'header header'
+        'sidebar content';
+      grid-gap: 10px;
+      grid-template-columns: 150px 1fr;
+      grid-template-rows: 50px 1fr;
+    }
+
+    .item {
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .header {
+      grid-area: header;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      align-self: start;
+    }
+
+    .content {
+      grid-area: content;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item header">header</div>
+    <div class="item sidebar">
+      <div class="link">link</div>
+      <div class="link">link</div>
+      <div class="link">link</div>
+      <div class="link">link</div>
+      <div class="link">link</div>
+    </div>
+    <div class="item content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel commodi harum aspernatur
+      ullam debitis aperiam doloribus est voluptates, dolor enim. Culpa totam eum, nostrum earum molestias perferendis
+      quos Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate dignissimos aut autem voluptas! Aliquid
+      ullam temporibus qui neque debitis officiis, praesentium animi sint amet id veritatis esse, omnis illo ut.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur perspiciatis dignissimos a veritatis.
+      Maxime, alias. Labore, cupiditate cumque. Cumque deserunt vel iste quam cum repellendus est error nostrum totam
+      maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis sed esse impedit est. Ea, sit,
+      tempora eius sapiente nihil nesciunt dolorum voluptatum delectus expedita, excepturi repudiandae consequatur optio
+      corporis. Dignissimos?
+    </div>
+  </div>
+
+</body>
+
+</html>

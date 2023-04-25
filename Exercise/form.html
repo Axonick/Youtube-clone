@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form, label, input</title>
+  <style>
+    
+
+body {
+  background-color: #6f9e80;
+  margin: 0;
+  font-family: sans-serif;
+  margin: 10px;
+} 
+
+select {
+    margin-top: 20px;
+    display: block;
+}
+
+.fields{
+	margin-top: 10px;
+}
+
+p {
+	display: inline-block;
+}
+  </style>
+</head>
+
+<body>
+  <form on input="city_out.value=city.value;">
+    <label>Выберите город доставки: </label>
+      <div class='fields'>
+        <p>
+          Москва
+        </p>
+        <input type="radio" name="city" value="msc" checked></input>
+        <p>
+          Питер
+        </p>
+        <input type="radio" name="city"  value="spb"></input>
+      </div>
+     <p>Результат: <output name='city_out' for='city'></output></p>
+    <form>
+      привет
+   </body>
+</body>
+</html>

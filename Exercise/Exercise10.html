@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested layout technique</title>
+  <style>
+    p {
+      font-family: Arial;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .video-info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 200px);
+      column-gap: 20px;
+    }
+
+    .container {
+      width: 200px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      vertical-align: top;
+      margin-right: 15px;
+    }
+
+    .animal-picture {
+      margin-bottom: 12px;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+
+    }
+
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 8px;
+      margin-bottom: 5px;
+    }
+
+    .row-friends {
+      display: grid;
+      grid-template-columns: 35px 1fr;
+      align-items: center;
+      margin-left: 8px;
+      margin-bottom: 10px;
+    }
+
+    .small-animal-picture {
+      width: 28px;
+      height: 28px;
+      object-fit: cover;
+      border-radius: 14px;
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+
+    .quantity {
+      color: rgb(100, 100, 100);
+    }
+
+    .add-btn {
+      background-color: rgb(24, 119, 242);
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      margin-left: 8px;
+      margin-bottom: 10px;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="video-info-grid">
+    <div class="container">
+      <img class="animal-picture" src="/Exercise/img/cat.jpg" alt="cat">
+      <p class="name">
+        Oliver
+      </p>
+      <div class="row-friends">
+        <img class="small-animal-picture" src="/Exercise/img/dog2.jpg" alt="dog2">
+        <p class="quantity">
+          2 mutual friends
+        </p>
+      </div>
+      <button class="add-btn">
+        Add Friend
+      </button>
+    </div>
+    <div class="container">
+      <img class="animal-picture" src="/Exercise/img/cat2.jpg" alt="cat">
+      <p class="name">
+        Mimi
+      </p>
+      <div class="row-friends">
+        <img class="small-animal-picture" src="/Exercise/img/dog2.jpg" alt="dog2">
+        <p class="quantity">
+          3 mutual friends
+        </p>
+      </div>
+      <button class="add-btn">
+        Add Friend
+      </button>
+    </div>
+    <div class="container">
+      <img class="animal-picture" src="/Exercise/img/dog.jpg" alt="cat">
+      <p class="name">
+        Rex
+      </p>
+      <div class="row-friends">
+        <img class="small-animal-picture" src="/Exercise/img/dog2.jpg" alt="dog2">
+        <p class="quantity">
+          4 mutual friends
+        </p>
+      </div>
+      <button class="add-btn">
+        Add Friend
+      </button>
+    </div>
+  </div>
+
+</body>
+
+</html>

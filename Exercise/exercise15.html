@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initian-scale=1.0">
+  <title>Position Practice</title>
+  <style>
+    body {
+      height: 3000px;
+      margin: 0;
+    }
+
+    .info {
+      position: relative;
+      width: 380px;
+
+    }
+
+    .shirt {
+      width: 380px;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .sale {
+      background-color: black;
+      color: white;
+      position: absolute;
+      padding: 5px 10px;
+      top: 15px;
+      right: 0;
+    }
+
+    .bottom-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .add-btn {
+      background-color: white;
+      border: 1px solid black;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+    /*.close-btn {
+      background-color: black;
+      color: white;
+      position: absolute;
+      padding: 8px 12px;
+      border-radius: 20px;
+      top: -14px;
+      left: -16px;
+      cursor: pointer;
+    }
+
+    .border {
+      background-color: gray;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 320px;
+      height: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .video-time {
+      background-color: black;
+      color: white;
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      padding: 4px 8px;
+    }*/
+  </style>
+</head>
+
+<body>
+  <!--<div class="close-btn">
+    X
+  </div>
+
+  <div class="border">Hello my friends!
+    <div class="close-btn">
+      X
+    </div>
+    <div class="video-time">
+      0:29
+    </div>
+  </div>-->
+
+  <br><br><br><br>
+
+  <div class="info">
+    <img class="shirt" src="/Exercise/img/shirt.jpg" alt="shirt">
+    <div class="sale">
+      20% OFF
+    </div>
+    <div class="bottom-overlay">
+      <button class="add-btn">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>

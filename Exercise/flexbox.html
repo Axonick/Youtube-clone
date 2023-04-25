@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEXBOX</title>
+  <style>
+    .container {
+      display: flex;
+      height: 180vh;
+    }
+
+    .item {
+      padding: 48px;
+      font-size: 25px;
+      border: 1px solid black;
+      height: fit-content;
+      width: fit-content;
+      flex-grow: 1;
+    }
+
+    .item_1 {}
+
+    .item_2 {
+      flex-grow: 2;
+    }
+
+    .item_3 {
+      flex-grow: 4;
+    }
+
+    input:checked+span {
+      background-color: orange;
+      color: white;
+    }
+
+    .links a:first-child {
+      color: red;
+    }
+    .links a:last-child {
+      color: orange;
+    }
+
+    .links a:nth-child(3) {
+      color: blue;
+    }
+    .links a:nth-child(odd) {
+      color: green;
+    }
+
+    .box {
+      display: inline-block;
+      background-color: red;
+      padding: 10px;
+      color: white;
+    }
+
+    .box::before {
+      content: 'Hello';
+      background-color: green;
+      color: white;
+    }
+    .box::after {
+      content: 'Bye';
+      background-color: green;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    FLEX-CONTAINER
+    <p>
+      align-content
+    </p>
+    <p>
+      align-items
+    </p>
+    <p>
+      flex-direction
+    </p>
+    <p>
+      flex-flow
+    </p>
+    <p>
+      flex-wrap
+    </p>
+    <p>
+      justify-content
+    </p>
+
+  </div>
+  <div>
+    FLEX-ITEM
+    <p>
+      align-self
+    </p>
+    <p>
+      flex-basis
+    </p>
+    <p>
+      flex-grow
+    </p>
+    <p>
+      flex-shrink
+    </p>
+    <p>
+      flex
+    </p>
+    <p>
+      order
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="item item_1">1</div>
+    <div class="item item_2">2</div>
+    <div class="item item_3">3</div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <label>
+    <input type="checkbox" name="gender"><span>Показать пароль</span>
+  </label>
+  <p>
+    <label>
+      <input type="radio" name="gender"><span>Мужской</span>
+    </label>
+    <label>
+      <input type="radio" name="gender" checked><span>Женский</span>
+    </label>
+  </p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="links">
+    <a href="#">О нас</a>
+    <a href="#">Контакты</a>
+    <a href="#">Вакансии</a>
+    <a href="#">Настройки</a>
+    <a href="#">Политика конфиденциальности</a>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+  <div class="box">
+    Блок с псевдоэлементами
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Nested</title>
+  <style>
+    /*.flexbox {
+      display: flex;
+      flex-direction: row;
+      height: 50px;
+    }
+
+   .item1 {
+    background-color: lightpink;
+    width: 100px;
+   }
+
+   .flexbox-1 {
+    background-color: lightblue;
+    width: 200px;
+   }
+
+   .row1 {
+    font-weight: bold;
+   }
+
+   .row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+   .row2__item {
+    background-color: black;
+    color: white;
+   }*/
+
+    div {
+      font-family: Arial;
+    }
+
+    .container {
+      padding: 10px 15px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+      width: 400px;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+
+    .inbox-label {
+      font-size: 14px;
+      color: rgb(120, 120, 120);
+      margin-bottom: 20px;
+    }
+
+    .info__img {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      object-fit: cover;
+      margin-left: 10px;
+    }
+
+    .email {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .email-content {
+      flex: 1;
+    }
+
+    .email-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3px;
+    }
+
+    .subject {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .sender-name {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .send-time {
+      font-size: 14px;
+      color: gray;
+    }
+
+    .message {
+      color: gray;
+
+    }
+
+    .sender-picture-container {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--<div class="flexbox">
+      <div class="item1"></div>
+      <div class="flexbox-1">
+          <div class="row1">row1</div>
+          <div class="row2">
+            <div class="row2__item">row2</div>
+            <div class="row2__item">row2</div>
+          </div>
+      </div>
+    </div>-->
+  <br><br><br>
+
+  <div class="container">
+    <div class="inbox-label">
+      ALL INBOXES
+    </div>
+    <div class="email">
+      <div class="sender-picture-container">
+        <img class="info__img" src="/Exercise/img/cat.jpg" alt="cat">
+      </div>
+      <div class="email-content">
+        <div class="email-header">
+          <div class="sender-name">Chewy Promotions</div>
+          <div class="send-time">4:58 PM</div>
+        </div>
+
+        <div class="subject">
+          Biggest sales of the year!
+        </div>
+        <div class="message">
+          Hey there! We're writing to tell you about our...
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
